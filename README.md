@@ -11,6 +11,7 @@
 <!-- Big-Blog
  https://play.tailwindcss.com/AX1sDzGW7m
 -->
+npm install -D @tailwindcss/jit tailwindcss postcss autoprefixer postcss-cli cssnano
 
 # create-svelte
 
