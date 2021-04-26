@@ -1,15 +1,17 @@
 <svelte:head>
 	<title>Welcome</title>
 </svelte:head>
+<script>
+  let date = '22March,2021'
+</script>
 <div class="dar select-none">
   <div class="bg-white py-10 px-3">
     <section class="grid grid-cols-2 font-jetMono sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 bg-green-100 dark:bg-cyan-500 gap-3 lg:gap-28 sm:py-5 md:py-8 lg:py-10 xl:py-14 py-8 rounded-3xl shadow justify-items-center">
       <a href="space.html" class="flex flex-col w-11/12 items-center cursor-pointer">
-
         <div class="w-11/12 sm:p-5 p-3 hover:bg-opacity-100 flex shadow items-center bg-gradient-to-r bg-opacity-70 bg-emerald-300 dark:from-blue-800 dark:to-indigo-600 rounded-xl">
           <div class="group sm:hidden w-full flex flex-col">
           <h1 class="ml-auto -mt-1 mb-1 -mr-1 bg-white px-1 rounded-sm bg-opacity-60 w-max text-xs">
-            22Mar,2021
+            {date}
           </h1>
           <h1 class="text-emerald-900 text-2xl dark:text-white">Uncle</h1>
           <p class="group-hover:line-clamp-4 line-clamp-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla totam vero mollitia necessitatibus nesciunt, id a esse? Quisquam, cupiditate hic quos atque possimus optio facere omnis quis, accusantium esse id perspiciatis porro repellat eos suscipit. Totam possimus natus libero molestiae!</p>
