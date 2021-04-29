@@ -124,10 +124,10 @@
     </div>
   </div>
 </nav>
-<div class="absolute flex justify-around w-full to-white sm:hidden">
-  <div class=" {isOpen ? '!opacity-100' : 'opacity-0'} transition-opacity ease-out delay-150 absolute grid w-full h-[60vh] grid-cols-1 pt-5 text-2xl place-content-around bg-gradient-to-br from-teal-400 rounded-b-xl justify-items-center pb-7">
+<div class="absolute flex justify-around w-full sm:hidden">
+  <div class=" {isOpen ? '!opacity-100' : 'opacity-0'} mt-2 transition-opacity ease-out delay-150 absolute grid w-[93%] h-[85vh] grid-cols-1 pt-5 text-2xl place-content-around bg-gradient-to-br from-cyan-300 via-[#00AAFFEE] to-[#00AAFFF0] rounded-xl justify-items-center pb-7">
 	{#each menuitems as menuitem (menuitem.id)}
-    <a on:click={()=>{isOpen = !isOpen}} href='./space.html' to="/How" class="block px-2 py-1 mt-1 font-bold text-teal-900 rounded-xl opacity-90 hover:opacity-100 font-jetMono">
+    <a on:click={()=>{isOpen = !isOpen}} href='./space.html' to="/How" class="block px-2 py-1 mt-1 font-bold text-white rounded-xl font-jetMono">
       <h1 class="flex items-center text-2xl group">
         {menuitem.name}
         <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-auto text-transparent transition-colors ease-in-out delay-100 fill-current group-hover:text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
