@@ -1,3 +1,5 @@
+First-Project is going on
+First-Learn Brach for Learning Dynamic routing in svelteKit
 
 <!-- Blog-link
  https://play.tailwindcss.com/8V7HgjwIte 
