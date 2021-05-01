@@ -1,17 +1,12 @@
 <script>
-	let cards = [
-		{ id: 1, date: '2nd May 2021', topic: 'Space', content: 'How this is all happening.' },
-        { id: 2, date: '2nd May 2021', topic: 'Space', content: 'How this is all happening.' },
-        { id: 3, date: '2nd May 2021', topic: 'Space', content: 'How this is all happening.' },
-        { id: 4, date: '2nd May 2021', topic: 'Space', content: 'How this is all happening.' },
-	];
+    import { cards } from "../../store.js";
 </script>
 
 <section
 	class="grid grid-cols-2 gap-3 py-3 mx-6 bg-green-100 shadow sm:mx-10 font-jetMono sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 dark:bg-cyan-200 lg:gap-28 sm:py-5 md:py-8 lg:py-10 xl:py-14 rounded-3xl justify-items-center"
 >
 	{#each cards as card (card.id)}
-        <a href="./space.html" class="flex flex-col items-center w-11/12 cursor-pointer">
+        <a href={'/Blogs/'+card.id} class="flex flex-col items-center w-11/12 cursor-pointer">
             <div
                 class="flex items-center w-11/12 p-3 shadow sm:p-5 hover:bg-opacity-100 bg-gradient-to-r bg-opacity-70 bg-emerald-300 dark:from-cyan-400 dark:to-light-blue-400 rounded-xl"
             >
