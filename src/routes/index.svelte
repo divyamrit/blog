@@ -1,12 +1,10 @@
 <script>
-	import Nav from '$components/nav.svelte'
 </script>
 
 <svelte:head>
 	<title>Welcome</title>
 </svelte:head>
 <div class="pb-40">
-<Nav />
 <!-- <div class="p-8 m-4 bg-blueGray-900 rounded-xl">
 	<h1 class="text-4xl sm:text-5xl text-cyan-500">Divya means pure,</h1>
 	<h1 class="text-5xl text-black sm:text-6xl">Amrit is related to ultimate power</h1>

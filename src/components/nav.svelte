@@ -1,7 +1,7 @@
 <script>
 	let isOpen = false;
-    let menuitems = [{id:1,name:'Home'},{id:2,name:'Blog'},{id:3,name:'Self'},{id:4,name:'How?'}]
-	let logo = 'src/assets/logo.png'
+    let menuitems = [{id:1,name:'Home',route:'/'},{id:2,name:'Blog',route:'/Blogs'},{id:3,name:'Self',route:'/Self'},{id:4,name:'How?',route:'/How?'}]
+	let logo = '$lib/assets/logo.png';
 </script>
 
 <nav
@@ -117,9 +117,9 @@
       <div class="flex-row hidden w-auto sm:flex h-14 place-items-center justify-items-center">
     <div class="flex flex-row mx-8 ml-auto place-content-between">
 		{#each menuitems as menuitem (menuitem.id)}
-		<div class="px-3 shadow-inner sm:mx-1 py-0.5 group flex flex-row place-items-center justify-items-center hover:bg-gray-100 hover:bg-opacity-5 rounded-md">
+		<a href={menuitem.route} class="px-3 shadow-inner sm:mx-1 py-0.5 group flex flex-row place-items-center justify-items-center hover:bg-gray-100 hover:bg-opacity-5 rounded-md">
  	       <p class="text-xl font-semibold text-transparent cursor-pointer select-none md:text-2xl bg-clip-text bg-gradient-to-br from-cyan-400 to-white opacity-70 group-hover:opacity-100">{menuitem.name}</p>
-		</div>
+		</a>
 		{/each}
     </div>
   </div>
