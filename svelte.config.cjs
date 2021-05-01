@@ -16,12 +16,6 @@ module.exports = {
 				}
 			}
 		},
-		files:{
-			assets:'static'
-		},
-		paths:{
-			assets:'src/assets/'
-		},
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte'
 	}

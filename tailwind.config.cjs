@@ -6,7 +6,7 @@ module.exports = {
 	darkMode:'class',
 	purge: {
 		content: [
-			"./src/**/*.{html,js,svelte,ts}",
+			"./src/routes/index.svelte","./src/routes/**/*.svelte","./src/lib/components/*.svelte"
 		],
 		options: {
 			defaultExtractor: (content) => [
