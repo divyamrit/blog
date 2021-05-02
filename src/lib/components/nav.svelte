@@ -1,11 +1,11 @@
 <script>
 	let isOpen = false;
     let menuitems = [{id:1,name:'Home',route:'/'},{id:2,name:'Blog',route:'/Blogs'},{id:3,name:'Self',route:'/Self'},{id:4,name:'How?',route:'/How?'}]
-	let logo = '../assets/logo.png';
+	let logo = '$lib/assets/logo';
 </script>
 
 <nav
-	class="relative flex items-center justify-between px-4 py-3 group"
+	class="relative z-20 flex items-center justify-between px-4 py-3 group"
 	style="
       background-image: url('https://images.pexels.com/photos/5338522/pexels-photo-5338522.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
       background-repeat: no-repeat;
@@ -15,7 +15,7 @@
 	<div class="flex items-center transition-opacity opacity-90 group-hover:opacity-100">
     <!--Logo-->
 		<img
-      src={logo}
+      {logo}
 			class="object-contain w-auto h-14 p-1 sm:p-0.5 bg-white rounded-full"
 			alt=""
 		/>
@@ -124,17 +124,19 @@
     </div>
   </div>
 </nav>
-<div class="absolute flex justify-around w-full sm:hidden">
-  <div class=" {isOpen ? '!opacity-100' : 'opacity-0'} mt-2 transition-opacity ease-out delay-150 absolute grid w-[93%] h-[85vh] grid-cols-1 pt-5 text-2xl place-content-around bg-gradient-to-br from-cyan-300 via-[#00AAFFEE] to-[#00AAFFF0] rounded-xl justify-items-center pb-7">
+<div class="absolute z-10 flex justify-end w-full sm:hidden">
+  <div class=" {isOpen ? '!opacity-100' : 'opacity-0'} -mt-1 max-w-[200px] transition-opacity ease-out delay-150 absolute grid w-[93%] h-[80vh] grid-cols-1 pt-5 text-2xl place-content-around bg-gradient-to-l from-cyan-500 to-teal-400 dark:from-blueGray-700 dark:via-blueGray-800 dark:to-[#111879DD] rounded-bl-xl shadow-lg justify-items-center pb-7">
 	{#each menuitems as menuitem (menuitem.id)}
-    <a on:click={()=>{isOpen = !isOpen}} href={menuitem.route} class="block px-2 py-1 mt-1 font-bold text-white rounded-xl font-jetMono">
-      <h1 class="flex items-center text-2xl group">
-        {menuitem.name}
-        <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-auto text-transparent transition-colors ease-in-out delay-100 fill-current group-hover:text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-        </svg>
-      </h1>
-    </a>
+	<div>
+		<a on:click={()=>{isOpen = !isOpen}} href={menuitem.route} class="block px-2 py-1 mt-1 text-white rounded-xl font-jetMono">
+ 	     <h1 class="flex items-center text-2xl group">
+ 	       {menuitem.name}
+ 	       <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-auto text-transparent transition-colors ease-in-out delay-100 fill-current text-[#FFFFFF50] group-hover:text-teal-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+ 	         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+ 	       </svg>
+ 	     </h1>
+ 	   </a>
+	</div>
 	{/each}
   </div>
 </div>
