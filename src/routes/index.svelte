@@ -79,8 +79,8 @@
 			</article>
 		</section>
 
-		<div class="mt-20 mb-10 grid grid-cols-1 justify-items-center">
-			<h1 class="text-base sm:text-2xl text-blue-500">Some of my free time Blogs</h1>
+		<div class="grid grid-cols-1 mt-20 mb-10 justify-items-center">
+			<h1 class="text-base text-blue-500 sm:text-2xl">Some of my free time Blogs</h1>
 		</div>
 		<Card />
 		<!-- <div class="w-11/12 p-4 text-transparent rounded-lg bg-clip-text bg-gradient-to-br from-indigo-400 via-rose-300 to-yellow-400 sm:h-60">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, quidem.</div>
