@@ -6,10 +6,6 @@
 	<title>Welcome</title>
 </svelte:head>
 <div class="pb-40">
-	<!-- <div class="p-8 m-4 bg-blueGray-900 rounded-xl">
-	<h1 class="text-4xl sm:text-5xl text-cyan-500">Divya means pure,</h1>
-	<h1 class="text-5xl text-black sm:text-6xl">Amrit is related to ultimate power</h1>
-</div> -->
 	<div
 		class="p-8 mx-4 my-20 text-left bg-gradient-to-br from-teal-300 via-cyan-400 to-green-300 rounded-xl"
 	>
@@ -83,7 +79,5 @@
 			<h1 class="text-base text-blue-500 sm:text-2xl">Some of my free time Blogs</h1>
 		</div>
 		<Card />
-		<!-- <div class="w-11/12 p-4 text-transparent rounded-lg bg-clip-text bg-gradient-to-br from-indigo-400 via-rose-300 to-yellow-400 sm:h-60">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, quidem.</div>
-	<div class="w-11/12 p-4 text-transparent rounded-lg bg-clip-text bg-gradient-to-br from-indigo-400 via-rose-300 to-yellow-400 sm:h-60">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, quidem.</div> -->
 	</div>
 </div>

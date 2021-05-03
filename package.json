@@ -1,15 +1,16 @@
 {
-  "name": "~TODO~",
+  "name": "~BLOG~",
   "version": "0.0.1",
   "scripts": {
     "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
+    "build": "svelte-kit build && svelte-kit adapt",
     "preview": "svelte-kit preview --host",
     "lint": "prettier --check . && eslint --ignore-path .gitignore .",
     "format": "prettier --write ."
   },
   "devDependencies": {
     "@supabase/supabase-js": "^1.8.0",
+    "@sveltejs/adapter-static": "^1.0.0-next.7",
     "@sveltejs/kit": "next",
     "@tailwindcss/jit": "^0.1.18",
     "autoprefixer": "^10.2.5",
